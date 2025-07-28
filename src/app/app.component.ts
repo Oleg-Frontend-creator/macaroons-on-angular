@@ -67,7 +67,7 @@ export class AppComponent {
 
   public addToCart(macaroon: MacaroonType, target: HTMLElement): void {
     target.scrollIntoView({behavior: 'smooth'});
-    this.formData.macaroon = macaroon.name;
+    this.formData.macaroon = macaroon.name.toUpperCase();
   }
 
   public createOrder(): void {
